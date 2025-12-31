@@ -1,34 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    <title>HomePage</title>
-</head>
-<body>
-    <!-- container -->
-    <div class="container">
-        <!-- about me -->
-        <div class="about-me">
-            <h2>Hello, my name is Andrew</h2>
-            <h2>I'm currently interested in</h2>
-            <h2>Data Science and Machine Learning</h2>
-        </div>
-        <!-- end about me -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="static/css/style.css">
+  <script src="static/script/script.js"></script>
 
-        <!-- social media -->
-        <div class="social-media">
-            <hr>
-            <a href="https://www.github.com/andrewnhh"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/andrewnhh"><i class="bi bi-linkedin"></i></a>
-            <hr>
-        </div>
-        <!-- end social media -->
+</head>
+
+<body>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Hi, I'm Andrew Nathanael</h1>
+    <p>Data Enthusiast</p>
+
+    <div class="scroll-indicator">
+      <span></span>
     </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      A passionate data enthusiast who loves exploring data-driven insights and visualizing results effectively.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Project One</h3>
+        <p>Simple description of your project.</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Another short description here.</p>
+      </div>
+      <div class="card">
+        <h3>Project Three</h3>
+        <p>Minimal, clean, and effective.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Want to work together or just say hi?</p>
+    <a href="mailto:youremail@example.com">Get in Touch</a>
+  </section>
+
+  <!-- Animation Script
+  <script>
+    const cards = document.querySelectorAll(".card");
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = "translateY(0)";
+        }
+      });
+    }, { threshold: 0.2 });
+
+    cards.forEach(card => observer.observe(card));
+  </script> -->
+
 </body>
 </html>
